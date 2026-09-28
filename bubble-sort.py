@@ -1,12 +1,12 @@
-list = [22,34,23,534,12312,3]
+list = [35,25,15,2]
 length = len(list)-1
 start = 0
 
 for x in range(length):
   for i in range(start, length):
     if list[i] > list[i+1]:
-      after = list[i]
-      previous = list[i+1]
-      list[i] = previous
-      list[i+1] = after
+      previous = list[i]
+      after = list[i+1]
+      list[i] = after
+      list[i+1] = previous
       print(list)
